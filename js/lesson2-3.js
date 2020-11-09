@@ -114,21 +114,21 @@
 // let dog = new Dog('dog')
 // dog.eat()
 class Animal {
-  constructor (type) {
+  constructor(type) {
     this.type = type
   }
-  eat () {
+  eat() {
     Animal.walk()
     console.log('i am eat food')
   }
-  static walk () {
+  static walk() {
     console.log('i am walking')
   }
 }
 
 class Dog extends Animal {
   // 显式，隐式
-  constructor (type) {
+  constructor(type) {
     super(type)
     this.age = 2
   }

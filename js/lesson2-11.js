@@ -2,9 +2,10 @@
 //   name: 'xiaoming',
 //   price: 190
 // }
-//
+
 // let d = new Proxy(o, {
 //   get (target, key) {
+//     console.log(target, key);
 //     if (key === 'price') {
 //       return target[key] + 20
 //     } else {
@@ -12,7 +13,7 @@
 //     }
 //   }
 // })
-//
+// //
 // console.log(d.price, d.name)
 // let o = {
 //   name: 'xiaoming',
@@ -23,7 +24,7 @@
 //   get (target, key) {
 //     return target[key]
 //   },
-//   set (target, key, value) {
+//   set (target, key, value) { // 只能读 不能修改信息
 //     return false
 //   }
 // })
@@ -32,7 +33,7 @@
 
 // for (let [key] of Object.entries(o)) {
 //   Object.defineProperty(o, key, {
-//     writable: false
+//     writable: false // 
 //   })
 // }
 // o.pirce = 300

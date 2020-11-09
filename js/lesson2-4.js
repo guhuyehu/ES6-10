@@ -58,7 +58,7 @@
 let test = {
   name: 'test',
   say: () => {
-    console.log(this.name, this)
+    console.log(this.name, this) // evel
   }
 }
 test.say()

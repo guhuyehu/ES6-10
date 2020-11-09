@@ -30,13 +30,13 @@
 // const l = gen()
 // l.next()
 // l.next()
-function * gen () {
-  let val
-  val = yield * [1, 2, 3]
-  console.log(val)
-}
+// function * gen () {
+//   let val
+//   val = yield * [1, 2, 3]
+//   console.log(val)
+// }
 
-const l = gen()
+// const l = gen()
 // {
 //   next(){
 //     value:1,
@@ -44,8 +44,8 @@ const l = gen()
 //   }
 // }
 // console.log(l)
-console.log(l.next())
-console.log(l.next())
+// console.log(l.next())
+// console.log(l.next())
 // function * gen () {
 //   let val
 //   val = (yield [1, 2, 3]) + 7
@@ -98,7 +98,7 @@ console.log(l.next())
 //   }
 //   return result
 // }
-//
+
 // let t = draw()
 // for (let value of t) {
 //   console.log(value)
@@ -109,7 +109,7 @@ console.log(l.next())
 //   let thirdPrize = ['3A', '3B', '3C', '3D', '3E', '3F', '3G', '3K', '3O', '3P']
 //   let count = 0
 //   let random
-//
+
 //   while (1) {
 //     if (count < first) {
 //       random = Math.floor(Math.random() * firstPrize.length)
@@ -131,8 +131,9 @@ console.log(l.next())
 //     }
 //   }
 // }
-//
+
 // let d = draw()
+// console.log(d.next());
 // console.log(d.next().value)
 // console.log(d.next().value)
 // console.log(d.next().value)
@@ -144,22 +145,23 @@ console.log(l.next())
 // console.log(d.next().value)
 // console.log(d.next().value)
 
-// function * count (x = 1) {
-//   while (1) {
-//     if (x % 3 === 0) {
-//       yield x
-//     }
-//     x++
-//   }
-// }
-//
-// let num = count()
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
-// console.log(num.next().value)
+// 逢三过  不带13这种的
+function * count (x = 1) {
+  while (1) {
+    if (x % 3 === 0) {
+      yield x
+    }
+    x++
+  }
+}
+
+let num = count()
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)
+console.log(num.next().value)

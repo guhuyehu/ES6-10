@@ -36,6 +36,7 @@ let authors = {
 authors[Symbol.iterator] = function * () {
   let allAuthors = this.allAuthors
   let keys = Reflect.ownKeys(allAuthors)
+  console.log(keys, '----');
   let values = []
   while (1) {
     if (!values.length) {
