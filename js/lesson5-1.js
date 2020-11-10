@@ -1,4 +1,4 @@
-function Gen (time) {
+function Gen(time) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
       resolve(time)
@@ -6,13 +6,13 @@ function Gen (time) {
   })
 }
 
-// async function test () {
-//   let arr = [Gen(2000), Gen(100), Gen(3000)]
+// async function test() {
+//   let arr = [Gen(2000), Gen(100), Gen(3000)] // promise实例
 //   for (let item of arr) {
 //     console.log(Date.now(), await item.then(console.log))
 //   }
 // }
-//
+
 // test()
 // async function test () {
 //   let arr = [Gen(2000), Gen(100), Gen(3000)]
@@ -20,7 +20,7 @@ function Gen (time) {
 //     console.log(Date.now(), item)
 //   }
 // }
-//
+
 // test()
 
 const obj = {

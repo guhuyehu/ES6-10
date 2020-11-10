@@ -2,13 +2,13 @@
 // let arr = [1, [2, 3], [4, 5, [6, 7, [8, 9]]]]
 // let arr = [1, 2, 3]
 //
-// // console.log(arr.flat(4))
+// // console.log(arr.flat(4)) flat(深度)
 // // arr.flatMap()
 // console.log(arr.map(item => [item * 2]).flat())
 // console.log(arr.flatMap(item => [item * 2]))
 // let str = '   foo   '
 // console.log(str.replace(/^\s+|\s+$/g, ''))
-// console.log(str.trimLeft())// trimStart
+// console.log(str.trimLeft())// trimStart 删去空格
 // console.log(str.trimEnd())
 // console.log(str.trim())
 // let str = `"foo" and "bar" and "baz"`
